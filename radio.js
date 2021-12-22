@@ -6,11 +6,10 @@
 // When the station is changed, pick a song from that station console.log("Now Playing:" + song,title + "by" + song.artist)
 
 // creates a new station
-class station {
+class station extends radio {
     // name property should be a string and songs should be an array of song objects
     constructor(name, songs) {
-        this.name = name;
-        this.songs = songs;
+        super(name, songs)
     }
 }
     
